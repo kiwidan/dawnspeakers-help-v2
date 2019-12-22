@@ -1,0 +1,19 @@
+.navbar {
+  background: white;
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  top: 0;
+  border-top: 4px solid $red;
+
+  .site-title {
+    font-family: Merriweather, serif;
+    font-weight: bold;
+    color: $red;
+    font-size: 18px;
+    float: left;
+    line-height: 60px;
+    vertical-align: middle;
+    text-decoration: none;
+  }
+}

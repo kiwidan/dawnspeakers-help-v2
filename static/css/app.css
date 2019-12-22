@@ -1,0 +1,400 @@
+.navbar {
+  background: white;
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  top: 0;
+  border-top: 4px solid #b81919; }
+
+.site-title {
+  font-family: Merriweather, serif;
+  font-weight: bold;
+  color: #b81919;
+  font-size: 18px;
+  float: left;
+  line-height: 60px;
+  vertical-align: middle;
+  text-decoration: none; }
+
+.header-right {
+  float: right; }
+  .header-right .header-button {
+    display: inline-block;
+    color: #777;
+    padding: 12px;
+    margin: 8px 0 8px 8px;
+    vertical-align: middle;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.35s; }
+    .header-right .header-button:hover {
+      color: #222;
+      background: #eee; }
+
+.side-nav {
+  width: 200px;
+  float: left; }
+  .side-nav .add-page-button {
+    background: #e75050;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    border-radius: 2px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 24px 0;
+    border: none; }
+    .side-nav .add-page-button:hover {
+      background: #b81919; }
+    .side-nav .add-page-button .icon {
+      font-weight: bold; }
+    .side-nav .add-page-button .icon, .side-nav .add-page-button .button-content {
+      display: inline-block;
+      font-size: 14px;
+      line-height: 16px;
+      vertical-align: middle; }
+      .side-nav .add-page-button .icon:not(:last-child), .side-nav .add-page-button .button-content:not(:last-child) {
+        margin-right: 4px; }
+  .side-nav .nav-heading {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 8px;
+    padding: 8px 0; }
+  .side-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 24px; }
+  .side-nav li {
+    font-size: 14px; }
+    .side-nav li a {
+      display: block;
+      padding: 8px 16px;
+      border-radius: 2px;
+      text-decoration: none;
+      color: #222; }
+    .side-nav li a.active {
+      background: white;
+      padding-left: 12px;
+      border-left: 4px solid #b81919; }
+    .side-nav li a.add-page-button {
+      color: #777;
+      cursor: pointer; }
+
+body, button, input, select, label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px; }
+
+body {
+  color: #222; }
+
+h1 {
+  border-bottom: 1px solid #ccc;
+  padding: 8px 0;
+  margin-top: 0; }
+
+h2, h3, h4, h5, h6 {
+  font-weight: 600; }
+
+h2 {
+  margin: 24px 0 2px; }
+
+a {
+  color: #076cab; }
+
+p {
+  color: #444; }
+
+blockquote {
+  color: #777;
+  border-left: 4px solid #777;
+  margin: 32px 0;
+  padding: 0 16px; }
+
+span.highlight {
+  background: #eee;
+  padding: 2px 4px;
+  border-radius: 2px;
+  color: black; }
+
+.text-red {
+  color: #b81919; }
+
+.text-editor-container .text-editor {
+  box-shadow: inset 0px 0px 30px -10px rgba(0, 0, 0, 0.5);
+  padding: 16px 32px; }
+
+.text-editor-container .text-editor-toolbar {
+  position: relative;
+  padding: 6px 12px;
+  border-bottom: 2px solid #eee; }
+  .text-editor-container .text-editor-toolbar .text-editor-button {
+    cursor: pointer;
+    color: #777;
+    display: inline-block;
+    padding: 6px;
+    line-height: 20px;
+    vertical-align: middle; }
+    .text-editor-container .text-editor-toolbar .text-editor-button.active {
+      color: black; }
+    .text-editor-container .text-editor-toolbar .text-editor-button .text-editor-icon {
+      font-size: 20px; }
+  .text-editor-container .text-editor-toolbar .text-editor-toolbar-seperator {
+    display: inline-block;
+    height: 32px;
+    width: 32px; }
+  .text-editor-container .text-editor-toolbar .text-editor-toolbar-actions {
+    float: right; }
+    .text-editor-container .text-editor-toolbar .text-editor-toolbar-actions .text-editor-action {
+      cursor: pointer;
+      margin: 9px 4px;
+      background: #e6e6e6;
+      border-radius: 2px;
+      padding: 6px 16px;
+      color: #5e5e5e;
+      font-weight: 700;
+      border: none;
+      font-size: 14px;
+      text-decoration: none; }
+      .text-editor-container .text-editor-toolbar .text-editor-toolbar-actions .text-editor-action:hover, .text-editor-container .text-editor-toolbar .text-editor-toolbar-actions .text-editor-action:active {
+        background: #ccc;
+        color: #222; }
+      .text-editor-container .text-editor-toolbar .text-editor-toolbar-actions .text-editor-action.primary {
+        background: #e75050;
+        color: white; }
+        .text-editor-container .text-editor-toolbar .text-editor-toolbar-actions .text-editor-action.primary:hover, .text-editor-container .text-editor-toolbar .text-editor-toolbar-actions .text-editor-action.primary:active {
+          background: #b81919; }
+
+.auth-page, .content, .modal-backdrop .modal {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 2px; }
+
+.auth-page {
+  padding: 24px; }
+
+.content {
+  float: left;
+  width: calc(100% - 218px);
+  margin-left: 16px; }
+  .content.editing {
+    box-shadow: inset 0px 0px 30px -10px rgba(0, 0, 0, 0.5); }
+  .content .content-body {
+    padding: 32px; }
+  .content .content-titlebar {
+    background: #eee;
+    padding: 12px 16px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px; }
+    .content .content-titlebar .content-titlebar-title {
+      display: inline-block;
+      font-weight: 700; }
+    .content .content-titlebar .content-titlebar-controls {
+      display: inline-block;
+      text-align: right; }
+      .content .content-titlebar .content-titlebar-controls a {
+        margin: 12px 0 12px 12px; }
+
+.notifications {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 1;
+  width: 400px;
+  max-width: 90%; }
+  .notifications .notification {
+    background: white;
+    box-shadow: 1px 1px 8px -3px #ccc;
+    border-radius: 2px;
+    padding: 16px 24px;
+    border: 1px solid;
+    margin-top: 16px; }
+  .notifications .notification-success {
+    background: #d4eddb;
+    border-color: #a6d9b4;
+    color: #005719; }
+  .notifications .notification-error {
+    background: #edbfbf;
+    border-color: #e29898;
+    color: #8b1313; }
+
+.auth-page {
+  margin: 0 auto;
+  width: 300px;
+  border-top: 4px solid #b81919; }
+  .auth-page .auth-site-title {
+    font-family: Merriweather, serif;
+    font-weight: bold;
+    color: #b61919;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 8px; }
+    .auth-page .auth-site-title::after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 2px;
+      background: #b81919;
+      position: relative;
+      margin: 0 auto;
+      margin-top: 12px; }
+  .auth-page .auth-page-title {
+    color: #515151;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 24px; }
+  .auth-page .auth-error {
+    background: rgba(201, 110, 110, 0.2);
+    border-left: 4px solid #b81919;
+    padding: 12px;
+    margin-bottom: 24px; }
+  .auth-page input:not([type="checkbox"]) {
+    display: inline-block;
+    padding: 12px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: calc(100% - 26px);
+    font-size: 15px; }
+  .auth-page .primary-button {
+    display: block;
+    background: #e75050;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    letter-spacing: .05em;
+    font-size: 15px; }
+    .auth-page .primary-button:hover, .auth-page .primary-button:active {
+      background: #b81919; }
+  .auth-page .form-group {
+    margin: 16px 0; }
+  .auth-page .checkbox-label {
+    display: block;
+    text-align: center;
+    font-size: 15px; }
+  .auth-page .forgot-password {
+    display: block;
+    text-align: center;
+    margin: 24px -24px -24px;
+    color: #777;
+    background: #eee;
+    padding: 20px; }
+    .auth-page .forgot-password a {
+      font-weight: 700;
+      color: #5a5a5a; }
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8); }
+  .modal-backdrop .modal {
+    background: white;
+    border-radius: 4px;
+    width: 500px;
+    position: absolute;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+    top: 30%;
+    left: 50%;
+    border: 1px; }
+    .modal-backdrop .modal .modal-header {
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      background: #eee;
+      padding: 16px;
+      font-weight: bold;
+      font-size: 16px; }
+    .modal-backdrop .modal .modal-body {
+      padding: 16px; }
+
+/**
+ * Misc styles
+ */
+body {
+  background: #eee;
+  margin: 0;
+  padding-top: calc(64px + 24px);
+  margin-bottom: 24px; }
+
+.container {
+  max-width: 1000px;
+  width: calc(100% - 32px);
+  margin: 0 auto; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.actions {
+  margin-top: 24px;
+  text-align: center; }
+
+form .form-group.error label {
+  color: #b81919; }
+
+form .form-group.error input {
+  border-color: #b81919; }
+
+form .form-group:not(:first-child) {
+  margin-top: 16px; }
+
+form .form-error {
+  background: rgba(201, 110, 110, 0.2);
+  border-left: 4px solid #b81919;
+  padding: 12px;
+  margin-bottom: 24px; }
+
+form label {
+  font-weight: 600;
+  display: block; }
+  form label.radio-label {
+    font-weight: 400; }
+
+form input, form select {
+  margin-top: 4px;
+  width: 100%;
+  padding: 8px; }
+
+form input {
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.1) inset; }
+  form input:not([type="checkbox"]) {
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: calc(100% - 26px);
+    font-size: 14px; }
+  form input[type=radio], form input[type=checkbox] {
+    display: inline-block;
+    width: auto; }
+
+form .field-error {
+  color: #b81919; }
+
+button {
+  padding: 12px 18px;
+  border-radius: 2px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none; }
+  button.primary {
+    background: #e75050;
+    color: white; }
+    button.primary:hover {
+      background: #b81919; }
+  button.secondary {
+    background: #eee; }
+    button.secondary:hover {
+      background: #ccc; }
+  button:not(:first-child) {
+    margin-left: 8px; }
+
+/*# sourceMappingURL=app.css.map*/

@@ -1,0 +1,36 @@
+title = "Dawnspeakers Help"
+baseURL = "https://example.com"
+languageCode = "en-nz"
+theme = "dawnspeakers_help"
+
+MetaDataFormat = "yaml"
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
+googleAnalytics = ""
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+  favicon = ""
+  description = "The last theme you'll ever need. Maybe."
+
+[menu]
+
+  [[menu.main]]
+    name = "Roles"
+    url = "/roles/"
+    weight = 10
+
+  [[menu.main]]
+    name = "Pathways"
+    url = "/pathways/"
+    weight = 20
+
+  [[menu.main]]
+    name = "Further Development"
+    url = "/further-development/"
+    weight = 30

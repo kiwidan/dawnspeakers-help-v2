@@ -1,0 +1,30 @@
+ // Variables
+ @import 'variables';
+
+// Misc
+@import 'navbar';
+@import 'side-nav';
+@import 'typography';
+@import 'content';
+
+/**
+ * Misc styles
+ */
+body {
+  background: $grey-lighter;
+  margin: 0;
+  padding-top: calc(64px + 24px);
+  margin-bottom: 24px;
+}
+
+.container {
+  max-width: 1000px;
+  width: calc(100% - 32px);
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
