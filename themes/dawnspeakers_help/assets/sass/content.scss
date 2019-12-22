@@ -9,5 +9,9 @@
 
   .content-body {
     padding: 32px;
+
+    > img {
+      width: 100%;
+    }
   }
 }

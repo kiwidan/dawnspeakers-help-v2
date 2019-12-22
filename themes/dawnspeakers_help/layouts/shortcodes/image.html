@@ -1,0 +1,4 @@
+{{ $file := $.Page.Resources.GetMatch (.Get "filename") }}
+{{ $alt := .Get "alt" }}
+
+<img src="{{ $file.Permalink }}" alt="{{ $alt }}" />

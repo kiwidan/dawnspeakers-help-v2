@@ -10,16 +10,12 @@ The role of the Toastmaster is to run the meeting.
 ## Resources
 
 {{< file-download title="Toastmaster Run Sheet" filename="Toastmaster Run Sheet.pdf" >}}
-  
-</a>
 
-## Flow
+## Send Confirmation Emails
 
-1. Joke
-1. General Business
-1. Speeches
-1. Table topics
-1. Evaluations
+Go to [Toastrooster](https://toastrooster.com/dawnspeakers) and click "Send confirmation emails".
+
+{{< image filename="Send Confirmation Emails.png" alt="Send Confirmation Emails" >}}
 
 ## Theme
 
