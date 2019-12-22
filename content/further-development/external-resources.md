@@ -5,4 +5,14 @@ weight = 30
 
 # External Resources
 
-[Dananjaya Hettiarachchi World Champion of Public Speaking 2014 - Full Speech](https://www.youtube.com/watch?v=bbz2boNSeL0)
+## World Champion of Public Speaking 2014
+
+Dananjaya Hettiarachchi
+
+{{< youtube bbz2boNSeL0 >}}
+
+## How to Start a Speech
+
+Conor Neill
+
+{{< youtube w82a1FT5o88 >}}

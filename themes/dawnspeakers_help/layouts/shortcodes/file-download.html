@@ -1,0 +1,12 @@
+{{ $file := $.Page.Resources.GetMatch (.Get "filename") }}
+{{ $paperclipIcon := resources.Get "images/icons/file-download.svg" }}
+
+<div class="file-download">
+  <a href="{{ $file.RelPermalink }}" download="">
+    <img src="{{ $paperclipIcon.Permalink }}" alt="File download icon" />
+
+    <div class="download-title">
+      {{ .Get "title" }}
+    </div>
+  </a>
+</div>

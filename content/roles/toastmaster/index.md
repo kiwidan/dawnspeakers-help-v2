@@ -7,6 +7,12 @@ weight = 20
 
 The role of the Toastmaster is to run the meeting.
 
+## Resources
+
+{{< file-download title="Toastmaster Run Sheet" filename="Toastmaster Run Sheet.pdf" >}}
+  
+</a>
+
 ## Flow
 
 1. Joke

@@ -1,0 +1,33 @@
+$icon-size: 18px;
+$height: $icon-size * 3;
+
+.file-download {
+  @extend .clearfix;
+
+  background: $grey-lighter;
+  display: inline-block;
+  height: $height;
+  border: 1px solid $grey-light;
+  border-radius: $border-radius;
+  margin-top: 12px;
+  margin-right: 12px;
+
+  img, .download-title {
+    float: left;
+    padding: $icon-size;
+  }
+  
+  img {
+    height: $icon-size;
+  }
+
+  .download-title {
+    padding-left: 0;
+  }
+
+  &:hover {
+    background: darken($grey-lighter, 5%);
+    border-color: darken($grey-light, 5%);
+    box-shadow: 0 1px 1px 0 rgba($grey, .3);
+  }
+}
