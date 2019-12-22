@@ -29,8 +29,4 @@ Success themes in the past include:
 
 1. Rugby world cup
 1. Something else
-1. Bla bla bla
-
-## Resources
-
-[Toastmaster Run Sheet](https://google.com/)
+1. Bla bla Bla
