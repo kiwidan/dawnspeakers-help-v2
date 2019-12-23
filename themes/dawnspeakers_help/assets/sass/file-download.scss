@@ -14,14 +14,15 @@ $height: $icon-size * 3;
 
   img, .download-title {
     float: left;
-    padding: $icon-size;
   }
   
   img {
     height: $icon-size;
+    padding: $icon-size;
   }
 
   .download-title {
+    padding: $icon-size - 2px $icon-size;
     padding-left: 0;
   }
 
