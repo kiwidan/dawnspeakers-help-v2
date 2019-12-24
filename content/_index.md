@@ -1,5 +1,6 @@
-+++
-title =  "New Hugo Site!"
-+++
+---
+title: Home
+weight: 10
+---
 
 # Dawnspeakers Help
