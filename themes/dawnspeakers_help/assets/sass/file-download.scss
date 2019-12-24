@@ -24,6 +24,7 @@ $height: $icon-size * 3;
   .download-title {
     padding: $icon-size - 2px $icon-size;
     padding-left: 0;
+    text-decoration: underline;
   }
 
   &:hover {
