@@ -17,9 +17,6 @@
   <!-- Styles -->
   {{ $style := resources.Get "sass/styles.scss" | toCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $style.Permalink }}">
-
-  <!-- Netlify CMS login -->
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
