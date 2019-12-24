@@ -4,11 +4,55 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
-  - name: 'help'
-    label: 'Help'
-    folder: 'content'
+  - name: 'roles'
+    label: 'Roles'
+    folder: 'content/roles'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Weight', name: 'weight', widget: 'number' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'pathways'
+    label: 'Pathways'
+    folder: 'content/pathways'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Weight', name: 'weight', widget: 'number' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'speaking-skills'
+    label: 'Speaking Skills'
+    folder: 'content/speaking-skills'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Weight', name: 'weight', widget: 'number' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'other-skills'
+    label: 'Other Skills'
+    folder: 'content/other-skills'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Weight', name: 'weight', widget: 'number' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'other-resources'
+    label: 'Other Resources'
+    folder: 'content/other-resources'
+    create: true
+    slug: '{{slug}}'
     editor:
       preview: false
     fields:
