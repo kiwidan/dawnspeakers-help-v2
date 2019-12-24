@@ -1,5 +1,5 @@
 title = "Dawnspeakers Help"
-baseURL = "https://angry-chandrasekhar-c65780.netlify.com"
+baseURL = "http://help.dawnspeakers.org"
 languageCode = "en-nz"
 theme = "dawnspeakers_help"
 
