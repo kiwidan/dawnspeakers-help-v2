@@ -7,7 +7,7 @@ weight = 20
 
 {{< file-download title="Toastmaster Run Sheet" filename="Toastmaster Run Sheet.pdf" >}}
 
-{{< file-download title="Toastmaster Evaluation Sheet" filename="Toastmaster Evaluation Sheet.pdf" >}}
+{{< file-download title="Toastmaster Evaluation Form" filename="Toastmaster Evaluation Form.pdf" >}}
 
 ## Purpose
 
