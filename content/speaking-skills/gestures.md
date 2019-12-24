@@ -1,6 +1,6 @@
 +++
 title =  "Gestures"
-weight = 10
+weight = 20
 +++
 
 # Gestures

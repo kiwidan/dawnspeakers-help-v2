@@ -15,6 +15,10 @@ The role of the Toastmaster is to run the meeting.
 
 ## How To Prepare
 
+1. [Send Confirmation Emails]({{< ref "#1-send-confirmation-emails" >}})
+1. [Choose a Theme]({{< ref "#2-choose-a-theme" >}})
+1. [Write Introductions]({{< ref "#3-write-introductions" >}})
+
 ### 1. Send Confirmation Emails
 
 Go to [Toastrooster](https://toastrooster.com/dawnspeakers) and click "Send confirmation
@@ -44,4 +48,4 @@ example, you may ask them a question about the theme for you to use in your intr
 them.
 
 You can find more about introducing speakers
-[here]({{< ref "further-development/introducing-speakers.md" >}}).
+[here]({{< ref "other-skills/introducing-speakers.md" >}}).
