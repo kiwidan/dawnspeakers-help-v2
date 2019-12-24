@@ -1,5 +1,5 @@
 title = "Dawnspeakers Help"
-baseURL = "http://help.dawnspeakers.org"
+baseURL = "https://help.dawnspeakers.org"
 languageCode = "en-nz"
 theme = "dawnspeakers_help"
 
