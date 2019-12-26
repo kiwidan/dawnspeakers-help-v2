@@ -2,7 +2,7 @@
 {{ $paperclipIcon := resources.Get "images/icons/file-download.svg" }}
 
 <div class="file-download">
-  <a href="{{ $file.RelPermalink }}" download="">
+  <a href="{{ $file.RelPermalink }}" download="" target="_blank">
     <img src="{{ $paperclipIcon.Permalink }}" alt="File download icon" />
 
     <div class="download-title">
