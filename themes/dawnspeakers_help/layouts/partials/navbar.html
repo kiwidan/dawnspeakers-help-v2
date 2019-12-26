@@ -1,5 +1,21 @@
 <div class="navbar">
   <div class="container">
     <a href="/" class="site-title">Dawnspeakers Help</a>
+
+    <div class="navbar-right">
+      <div id="nav-icon3" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
   </div>
 </div>
+
+<script type="text/javascript">
+  function toggleNav() {
+    const navIcon = document.getElementById('nav-icon3');
+    navIcon.classList.toggle('open');
+  }
+</script>

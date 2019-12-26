@@ -1,6 +1,10 @@
 .side-nav {
   width: 200px;
   float: left;
+
+  @media (max-width: $breakpoint__mobile-nav-max-width) {
+    display: none;
+  }
   
   .nav-heading {
     font-size: 14px;

@@ -1,0 +1,39 @@
+#nav-icon3 {
+  position: relative;
+  width: 24px;
+  height: 17px;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  margin: 21.5px 0;
+
+  span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: $red;
+    border-radius: 5px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+
+  span:nth-child(1) { top: 0px; }
+  span:nth-child(2) { top: 7px; }
+  span:nth-child(3) { top: 7px; }
+  span:nth-child(4) { top: 14px; }
+
+  &.open {
+    span:nth-child(1),
+    span:nth-child(4) {
+      top: 18px;
+      width: 0%;
+      left: 50%;
+    }
+
+    span:nth-child(2) { transform: rotate(45deg); }
+    span:nth-child(3) { transform: rotate(-45deg); }
+  }
+}
