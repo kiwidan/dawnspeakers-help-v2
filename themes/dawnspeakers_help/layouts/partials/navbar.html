@@ -3,7 +3,7 @@
     <a href="/" class="site-title">Dawnspeakers Help</a>
 
     <div class="navbar-right">
-      <div id="nav-icon3" onclick="toggleNav()">
+      <div class="mobile-nav-button" id="mobile-nav-button" onclick="toggleNav()">
         <span></span>
         <span></span>
         <span></span>
@@ -31,10 +31,10 @@
 
 <script type="text/javascript">
   function toggleNav() {
-    const navIcon = document.getElementById('nav-icon3');
+    const mobileNavButton = document.getElementById('mobile-nav-button');
     const mobileMenu = document.getElementById('mobile-menu');
     
-    navIcon.classList.toggle('open');
+    mobileNavButton.classList.toggle('open');
     mobileMenu.classList.toggle('open');
     
     document.body.classList.toggle('mobile-menu-open');
