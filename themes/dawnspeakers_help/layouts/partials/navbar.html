@@ -21,7 +21,7 @@
   
     {{- range .Pages.ByWeight -}}
       <div class="menu-item">
-        <a href="{{ .URL }}" class="{{ if eq .UniqueID $currentNode.UniqueID }}active{{ end }}">
+        <a href="{{ .URL }}">
           {{ .Title }}
         </a>
       </div>
@@ -36,5 +36,7 @@
     
     navIcon.classList.toggle('open');
     mobileMenu.classList.toggle('open');
+    
+    document.body.classList.toggle('mobile-menu-open');
   }
 </script>
