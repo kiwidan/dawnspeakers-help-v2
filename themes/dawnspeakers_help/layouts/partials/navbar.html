@@ -13,34 +13,49 @@
   </div>
 
   <div class="mobile-menu-slide-wrapper" id="mobile-menu-slide-wrapper">
-      <div class="mobile-menu" id="mobile-menu">
-        {{ $currentNode := . }}
-    
-        {{- range .Site.Home.Sections -}}
-        <div class="nav-heading">{{ .Title }}</div>
-        
-          {{- range .Pages.ByWeight -}}
-            <div class="menu-item">
-              <a href="{{ .URL }}">
-                {{ .Title }}
-              </a>
-            </div>
-          {{- end -}}
+    <div class="mobile-menu" id="mobile-menu">
+      {{ $currentNode := . }}
+  
+      {{- range .Site.Home.Sections -}}
+      <div class="nav-heading">{{ .Title }}</div>
+      
+        {{- range .Pages.ByWeight -}}
+          <div class="menu-item">
+            <a href="{{ .URL }}">
+              {{ .Title }}
+            </a>
+          </div>
         {{- end -}}
-      </div>
+      {{- end -}}
     </div>
+  </div>
 </div>
 
-<div class="mobile-menu-page-dimmer"></div>
+<div class="mobile-menu-page-dimmer" id="mobile-menu-page-dimmer"></div>
 
 <script type="text/javascript">
+  window.onload = function() {
+    const mobileMenuHeight = document.getElementById('mobile-menu').clientHeight;
+    console.log(mobileMenuHeight);
+
+    let style = document.createElement('style');
+
+    style.innerHTML = `
+      .mobile-menu-slide-wrapper.open {
+        max-height: ${mobileMenuHeight}px;
+      }
+    `;
+
+    document.head.appendChild(style);
+  };
+
   function toggleNav() {
     const mobileNavButton = document.getElementById('mobile-nav-button');
     const mobileMenuSlideWrapper = document.getElementById('mobile-menu-slide-wrapper');
+    const dimmer = document.getElementById('mobile-menu-page-dimmer');
     
     mobileNavButton.classList.toggle('open');
     mobileMenuSlideWrapper.classList.toggle('open');
-    
-    document.body.classList.toggle('mobile-menu-open');
+    dimmer.classList.toggle('show');
   }
 </script>

@@ -4,19 +4,12 @@
   z-index: 100;
   position: relative;
   
-  transition: max-height .5s ease-in-out;
-
-  &.open {
-    @media (max-width: $breakpoint__mobile-nav-max-width) {
-      border-bottom: 1px solid $grey-light;
-      max-height: 10000px;
-    }
-  }
+  transition: max-height .5s linear;
 }
 
 .mobile-menu {
   background: white;
-  padding: 8px 0 24px;
+  padding: 0 0 24px;
 
   .nav-heading, .menu-item {
     padding: 8px 32px;
@@ -35,14 +28,14 @@
 
   background: rgba(0, 0, 0, .5);
 
-  transition: background .5s ease-in-out;
+  transition: background 1s linear;
 
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-}
 
-.mobile-menu-open .mobile-menu-page-dimmer {
-  display: block;
+  &.show {
+    display: block;
+  }
 }
