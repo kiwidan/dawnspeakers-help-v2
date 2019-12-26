@@ -16,11 +16,9 @@
 body {
   background: $grey-lighter;
   margin: 0;
-  padding-top: calc(64px + 24px);
   margin-bottom: 24px;
 
   @media (max-width: $breakpoint__mobile-nav-max-width) {
-    padding-top: 64px;
     margin-bottom: 0;
   }
 }
