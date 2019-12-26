@@ -1,5 +1,17 @@
 @import 'lib/panel';
 
+.content-container {
+  @extend .container;
+  @extend .clearfix;
+
+  margin-top: 24px;
+
+  @media (max-width: $breakpoint__mobile-nav-max-width) {
+    margin: 0;
+    width: 100%;
+  }
+}
+
 .content {
   @extend %panel;
   

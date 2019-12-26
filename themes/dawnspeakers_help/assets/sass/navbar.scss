@@ -1,6 +1,11 @@
+.fake-navbar {
+  position: relative;
+  height: calc(60px + 4px);
+}
+
 .navbar {
   background: white;
-  position: relative;
+  position: absolute;
   z-index: 200;
   width: 100%;
   border-bottom: 1px solid #ccc;
@@ -20,5 +25,11 @@
 
   .navbar-right {
     float: right;
+  }
+
+  &::before {
+    height: 60px;
+    width: 100%;
+    position: relative;
   }
 }
