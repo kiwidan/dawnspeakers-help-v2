@@ -13,9 +13,28 @@
   </div>
 </div>
 
+<div class="mobile-menu open" id="mobile-menu">
+  {{ $currentNode := . }}
+
+  {{- range .Site.Home.Sections -}}
+    <div class="nav-heading">{{ .Title }}</div>
+    
+    {{- range .Pages.ByWeight -}}
+      <div class="menu-item">
+        <a href="{{ .URL }}" class="{{ if eq .UniqueID $currentNode.UniqueID }}active{{ end }}">
+          {{ .Title }}
+        </a>
+      </div>
+    {{- end -}}
+  {{- end -}}
+</div>
+
 <script type="text/javascript">
   function toggleNav() {
     const navIcon = document.getElementById('nav-icon3');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
     navIcon.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
   }
 </script>

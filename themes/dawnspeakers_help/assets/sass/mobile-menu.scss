@@ -1,0 +1,15 @@
+.mobile-menu {
+  background: white;
+  padding: 16px;
+  display: none;
+
+  &.open {
+    @media (max-width: $breakpoint__mobile-nav-max-width) {
+        display: block;
+    }
+  }
+
+  .menu-item {
+    padding: 8px;
+  }
+}
