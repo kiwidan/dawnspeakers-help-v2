@@ -5,7 +5,12 @@
   transform: rotate(0deg);
   transition: .5s ease-in-out;
   cursor: pointer;
-  margin: 21.5px 0;
+  margin: 21px 0;
+
+  display: none;
+  @media (max-width: $breakpoint__mobile-nav-max-width) {
+    display: block;
+  }
 
   span {
     display: block;
