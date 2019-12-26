@@ -37,8 +37,26 @@
 
 <script type="text/javascript">
   window.onload = function() {
+    setMobileMenuWrapperMaxHeight();
+    setAnimationListeners();
+  };
+
+  function setAnimationListeners() {
+    document.addEventListener('animationstart', function (e) {
+      if (e.animationName === 'mobile-menu-fade-in') {
+          e.target.classList.add('did-fade-in');
+      }
+    });
+    
+    document.addEventListener('animationend', function (e) {
+      if (e.animationName === 'mobile-menu-fade-out') {
+          e.target.classList.remove('did-fade-in');
+       }
+    });
+  }
+
+  function setMobileMenuWrapperMaxHeight() {
     const mobileMenuHeight = document.getElementById('mobile-menu').clientHeight;
-    console.log(mobileMenuHeight);
 
     let style = document.createElement('style');
 
@@ -49,7 +67,7 @@
     `;
 
     document.head.appendChild(style);
-  };
+  }
 
   function toggleNav() {
     const mobileNavButton = document.getElementById('mobile-nav-button');
