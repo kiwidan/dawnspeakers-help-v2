@@ -10,6 +10,9 @@
   @media (max-width: $breakpoint__mobile-nav-max-width) {
     width: 100%;
     margin-left: 0;
+    
+    // Remove border, because we go full-width
+    border: none;
   }
 
   .content-body {

@@ -18,12 +18,23 @@ body {
   margin: 0;
   padding-top: calc(64px + 24px);
   margin-bottom: 24px;
+
+  @media (max-width: $breakpoint__mobile-nav-max-width) {
+    padding-top: 64px;
+    margin-bottom: 0;
+  }
 }
 
 .container {
   max-width: 1000px;
   width: calc(100% - 32px);
   margin: 0 auto;
+
+  &.mobile__full-width {
+    @media (max-width: $breakpoint__mobile-nav-max-width) {
+      width: 100%;
+    }
+  }
 }
 
 .clearfix:after {
