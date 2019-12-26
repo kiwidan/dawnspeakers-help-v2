@@ -13,12 +13,12 @@
   </div>
 </div>
 
-<div class="mobile-menu open" id="mobile-menu">
+<div class="mobile-menu" id="mobile-menu">
   {{ $currentNode := . }}
 
   {{- range .Site.Home.Sections -}}
-    <div class="nav-heading">{{ .Title }}</div>
-    
+  <div class="nav-heading">{{ .Title }}</div>
+  
     {{- range .Pages.ByWeight -}}
       <div class="menu-item">
         <a href="{{ .URL }}" class="{{ if eq .UniqueID $currentNode.UniqueID }}active{{ end }}">

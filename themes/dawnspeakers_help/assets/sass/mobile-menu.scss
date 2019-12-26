@@ -1,7 +1,8 @@
 .mobile-menu {
   background: white;
-  padding: 16px;
   display: none;
+  border-bottom: 1px solid $grey-light;
+  padding: 8px 0 24px;
 
   &.open {
     @media (max-width: $breakpoint__mobile-nav-max-width) {
@@ -9,7 +10,13 @@
     }
   }
 
-  .menu-item {
-    padding: 8px;
+  .nav-heading, .menu-item {
+    padding: 8px 32px;
+  }
+
+  .nav-heading {
+    font-weight: bold;
+    padding-bottom: 8px;
+    padding-top: 24px;
   }
 }
