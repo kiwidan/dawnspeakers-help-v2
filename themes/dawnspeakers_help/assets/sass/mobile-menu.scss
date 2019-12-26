@@ -1,4 +1,7 @@
 $animation-duration: .3s;
+$animation-fade-out-duration: .5s;
+
+$dimmer-opacity: .7;
 
 .mobile-menu-slide-wrapper {
   max-height: 0px;
@@ -37,23 +40,23 @@ $animation-duration: .3s;
   right: 0;
 
   &.show {
-    animation: mobile-menu-fade-in $animation-duration;
     display: block;
-    opacity: 0.7;
+    opacity: $dimmer-opacity;
+    animation: mobile-menu-fade-in $animation-duration;
   }
 
   &:not(.show).did-fade-in {
     display: block;
-    animation: mobile-menu-fade-out $animation-duration;
+    animation: mobile-menu-fade-out $animation-fade-out-duration;
   }
 }
 
 @keyframes mobile-menu-fade-in {
   from { opacity: 0; }
-  to   { opacity: .7; }
+  to   { opacity: $dimmer-opacity; }
 }
 
 @keyframes mobile-menu-fade-out {
-  from { opacity: .7; }
+  from { opacity: $dimmer-opacity; }
   to   { opacity: 0; }
 }
