@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css?family=Merriweather:700" rel="stylesheet">
 
   <!-- Styles -->
-  {{ $style := resources.Get "sass/styles.scss" | toCSS | minify | fingerprint }}
+  {{ $style := resources.Get "sass/styles.scss" | toCSS | postCSS (dict "use" "autoprefixer") | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $style.Permalink }}">
 </head>
 
