@@ -1,5 +1,5 @@
 <div class="navbar">
-  <div class="container">
+  <div class="container clearfix">
     <a href="/" class="site-title">Dawnspeakers Help</a>
 
     <div class="navbar-right">
@@ -11,31 +11,35 @@
       </div>
     </div>
   </div>
-</div>
 
-<div class="mobile-menu" id="mobile-menu">
-  {{ $currentNode := . }}
-
-  {{- range .Site.Home.Sections -}}
-  <div class="nav-heading">{{ .Title }}</div>
-  
-    {{- range .Pages.ByWeight -}}
-      <div class="menu-item">
-        <a href="{{ .URL }}">
-          {{ .Title }}
-        </a>
+  <div class="mobile-menu-slide-wrapper" id="mobile-menu-slide-wrapper">
+      <div class="mobile-menu" id="mobile-menu">
+        {{ $currentNode := . }}
+    
+        {{- range .Site.Home.Sections -}}
+        <div class="nav-heading">{{ .Title }}</div>
+        
+          {{- range .Pages.ByWeight -}}
+            <div class="menu-item">
+              <a href="{{ .URL }}">
+                {{ .Title }}
+              </a>
+            </div>
+          {{- end -}}
+        {{- end -}}
       </div>
-    {{- end -}}
-  {{- end -}}
+    </div>
 </div>
+
+<div class="mobile-menu-page-dimmer"></div>
 
 <script type="text/javascript">
   function toggleNav() {
     const mobileNavButton = document.getElementById('mobile-nav-button');
-    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuSlideWrapper = document.getElementById('mobile-menu-slide-wrapper');
     
     mobileNavButton.classList.toggle('open');
-    mobileMenu.classList.toggle('open');
+    mobileMenuSlideWrapper.classList.toggle('open');
     
     document.body.classList.toggle('mobile-menu-open');
   }
