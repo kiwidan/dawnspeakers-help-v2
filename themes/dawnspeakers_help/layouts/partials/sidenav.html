@@ -2,23 +2,17 @@
   {{ $currentNode := . }}
 
   {{- range .Site.Home.Sections -}}
-    {{ template "open-menu" dict "sect" . "currentNode" $currentNode }}
+    <div class="nav-heading">{{ .Title }}</div>
+    
+    <ul>
+      {{- range .Pages.ByWeight -}}
+        <li>
+          <a href="{{ .URL }}" class="{{ if eq .UniqueID $currentNode.UniqueID }}active{{ end }}">
+            {{ .Title }}
+          </a>
+        </li>
+      {{- end -}}
+    </ul>
   {{- end -}}
-
-  {{define "open-menu"}}
-    {{- $currentNode := .currentNode -}}
-    {{ with .sect }}
-      <div class="nav-heading">{{ .Title }}</div>
-      
-      <ul>
-        {{- range .Pages.ByWeight -}}
-          <li>
-            <a href="{{ .URL }}" class="{{ if eq .UniqueID $currentNode.UniqueID }}active{{ end }}">
-              {{ .Title }}
-            </a>
-          </li>
-        {{- end -}}
-      </ul>
-    {{ end }}
-  {{ end }}
 </nav>
+
