@@ -39,15 +39,19 @@ $dimmer-opacity: .7;
   left: 0;
   right: 0;
 
-  &.show {
-    display: block;
-    opacity: $dimmer-opacity;
-    animation: mobile-menu-fade-in $animation-duration;
-  }
 
-  &:not(.show).did-fade-in {
-    display: block;
-    animation: mobile-menu-fade-out $animation-fade-out-duration;
+  @media (max-width: $breakpoint__mobile-nav-max-width) {
+    &.show {
+      display: block;
+      opacity: $dimmer-opacity;
+      animation: mobile-menu-fade-in $animation-duration;
+    }
+  
+    &:not(.show).did-fade-in {
+      
+      display: block;
+      animation: mobile-menu-fade-out $animation-fade-out-duration;
+    }
   }
 }
 
