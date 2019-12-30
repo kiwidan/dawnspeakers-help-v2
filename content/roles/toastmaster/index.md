@@ -24,7 +24,7 @@ The role of the Toastmaster is to run the meeting.
 Go to [Toastrooster](https://toastrooster.com/dawnspeakers) and click "Send confirmation
 emails".
 
-{{< image filename="Send Confirmation Emails.png" alt="Send Confirmation Emails" >}}
+{{< image src="Send Confirmation Emails.png" alt="Send Confirmation Emails"  >}}
 
 ### 2. Choose a Theme
 
